@@ -22,8 +22,7 @@ import org.alfresco.service.cmr.repository.NodeRef;
  * This class is used to hold information about a revisioned node
  * 
  */
-public class NodeRefRevision
-{
-    public String comment;
-    public NodeRef node;
+public class NodeRefRevision {
+	public String comment;
+	public NodeRef node;
 }

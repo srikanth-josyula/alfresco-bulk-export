@@ -18,24 +18,20 @@ package org.alfresco.extensions.bulkexport;
 
 import java.time.Duration;
 
-public class StopWatch 
-{ 
-    public StopWatch() 
-    {
-        startTime = System.currentTimeMillis();
-    } 
+public class StopWatch {
+	public StopWatch() {
+		startTime = System.currentTimeMillis();
+	}
 
-    public long elapsedTime() 
-    {
-        long now = System.currentTimeMillis();
-        return (now - startTime) / 1000;
-    }
-    
-    public Duration elapsedDuration() 
-    {
-        long now = System.currentTimeMillis();
-        return Duration.ofMillis(now - startTime);
-    }
+	public long elapsedTime() {
+		long now = System.currentTimeMillis();
+		return (now - startTime) / 1000;
+	}
 
-    private long startTime;
-} 
+	public Duration elapsedDuration() {
+		long now = System.currentTimeMillis();
+		return Duration.ofMillis(now - startTime);
+	}
+
+	private long startTime;
+}

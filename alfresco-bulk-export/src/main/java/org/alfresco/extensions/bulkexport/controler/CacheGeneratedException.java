@@ -17,40 +17,41 @@
 package org.alfresco.extensions.bulkexport.controler;
 
 /**
- *  This Exception is used to indicate expected behaviour under certain conditions. Not the best idea from a design point of view, oh well.
+ * This Exception is used to indicate expected behaviour under certain
+ * conditions. Not the best idea from a design point of view, oh well.
  */
-public class CacheGeneratedException extends Exception
-{
+public class CacheGeneratedException extends Exception {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7217547946106445749L;
 	private int nodeCount = -1;
-    public CacheGeneratedException()
-    {
 
-    }
+	public CacheGeneratedException() {
 
-    public CacheGeneratedException(String message, int nodeCount) {
-    	super(message);
-    	this.nodeCount = nodeCount;
-    }
-    public CacheGeneratedException(String message)
-    {
-        super(message);
-    }
+	}
 
-    public CacheGeneratedException(Throwable cause)
-    {
-        super(cause);
-    }
+	public CacheGeneratedException(String message, int nodeCount) {
+		super(message);
+		this.nodeCount = nodeCount;
+	}
 
-    public CacheGeneratedException(String message, Throwable cause)
-    {
-        super(message, cause);
-    }
+	public CacheGeneratedException(String message) {
+		super(message);
+	}
 
-    public CacheGeneratedException(String message, Throwable cause,
-                                       boolean enableSuppression, boolean writableStackTrace)
-    {
-        super(message, cause, enableSuppression, writableStackTrace);
-    }
+	public CacheGeneratedException(Throwable cause) {
+		super(cause);
+	}
+
+	public CacheGeneratedException(String message, Throwable cause) {
+		super(message, cause);
+	}
+
+	public CacheGeneratedException(String message, Throwable cause, boolean enableSuppression,
+			boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+	}
 
 	public int getNodeCount() {
 		return nodeCount;
